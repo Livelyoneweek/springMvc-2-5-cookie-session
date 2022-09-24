@@ -14,7 +14,7 @@ import java.io.IOException;
 public class LoginCheckFilter implements Filter {
 
     // 로그인 없어도 들어와야하는 페이지들
-    private static final String[] whitelist = {"/", "/members/add", "/login", "/logout","/css/*"};
+    private static final String[] whitelist = {"/", "/members/add", "/login", "/logout","/css/*","/*.ico"};
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
